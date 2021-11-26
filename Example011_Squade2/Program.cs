@@ -1,6 +1,9 @@
 ﻿// По двум заданным числам проверять является ли первое квадратом второго
-int A = 100;
-int B = 10;
+
+Console.WriteLine("Введите первое число: ");
+int A = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int B = Convert.ToInt32(Console.ReadLine());
 if (Math.Sqrt(A) == B)
 {
     Console.WriteLine("Является");
