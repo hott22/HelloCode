@@ -4,10 +4,7 @@ int N = Convert.ToInt32(Console.ReadLine());
 int count = -N;
 while (count < N + 1)
 {
-
-    Console.WriteLine(count);
+    Console.Write(count);
     count = count + 1;
-
-
 }
 
