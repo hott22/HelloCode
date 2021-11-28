@@ -8,8 +8,8 @@ if (num1 > 999 | num1 < 100)
 else
 {
     int num2 = num1 % 100;
-    int num3 = num2 % 10;
-    int num4 = (num2 - num3) / 10;
+    int num3 = num2 / 10;
+    
     Console.Write("Вторая цифра: ");
-    Console.WriteLine(num4);
+    Console.WriteLine(num3);
 }
