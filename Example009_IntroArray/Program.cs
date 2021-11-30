@@ -1,4 +1,4 @@
-﻿// Поиск макстмального из 9, с помощью массива
+﻿// Находит максимальное значение с помощью массива
 int Max(int arg1, int arg2, int arg3)
 {
     int result = arg1;
@@ -14,5 +14,4 @@ int result = Max(
     Max(array[3], array[4], array[5]),
     Max(array[6], array[7], array[8])
 );
-Console.Write ("Максимальное число: ");
 Console.WriteLine(result);

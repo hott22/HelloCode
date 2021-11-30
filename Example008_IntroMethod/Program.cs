@@ -1,5 +1,4 @@
-﻿// Нахождение максимального с помощью функции (метод)
-
+﻿// Находит максимальное значение с помощью метода
 int Max(int arg1, int arg2, int arg3)
 {
     int result = arg1;
@@ -27,5 +26,5 @@ int max = Max(
     Max(a2, b2, c2),
     Max(a3, b3, c3));
 
-Console.Write ("Максимальное число: ");
 Console.WriteLine(max);
+
