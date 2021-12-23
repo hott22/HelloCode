@@ -3,6 +3,6 @@ Console.Write("Введи N: ");
 double N = Convert.ToDouble(Console.ReadLine());
 for (int i = 2; i <= N; i+=2)
 {
-    Console.WriteLine($"{Math.Pow(i, 3)}");
+    Console.WriteLine($"{i}^{3} = {Math.Pow(i, 3)}");
 }
 

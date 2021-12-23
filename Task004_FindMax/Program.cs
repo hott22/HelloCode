@@ -7,9 +7,8 @@ Console.Write("Введите третье число: ");
 double numС = Convert.ToDouble(Console.ReadLine());
 
 double max = numA;
-if (numA > max) max = numA;
 if (numB > max) max = numB;
 if (numС > max) max = numС;
 
-Console.Write("Максимально число ");
+Console.Write("Максимальное число ");
 Console.WriteLine(max);

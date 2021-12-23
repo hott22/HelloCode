@@ -6,11 +6,11 @@ for (int i = 0; i < length; i++)
     array[i] = new Random().Next(0, 10);
     Console.Write($"{array[i]} ");
 }
-int noteven = 0;
+int sumnoteven = 0;
 for (int i = 1; i < length; i+=2)
 {
-    noteven = noteven + array[i];
+    sumnoteven = sumnoteven + array[i];
 }
 Console.WriteLine("");
 Console.Write("Сумма чисел на нечетных позициях: ");
-Console.WriteLine(noteven);
+Console.WriteLine(sumnoteven);

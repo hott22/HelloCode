@@ -1,16 +1,19 @@
 ﻿// Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
-Console.WriteLine ("введи первое");
-bool number1 = bool.Parse(Console.ReadLine());
-Console.WriteLine (number1);
-Console.WriteLine ("введи второе");
-bool number2 = bool.Parse(Console.ReadLine());
-Console.WriteLine (number2);
+string Method(bool X, bool Y)
+{
+    string result = String.Empty;
+    Console.Write($"значение X: {X}\n");
+    Console.Write("значение Y: {0}\n", Y);
+    if(!(X || Y) == (!X && !Y)) result = "Истина";
+    else result = "Ложь";
+    return result;
+}
 
-if (!(number1 | number2) == (!number1 & !number2))
-{
-    Console.WriteLine("работает");
-}
-else
-{
-    Console.WriteLine("НЕ работает");
-}
+string res = Method(true, true);
+Console.WriteLine($"Ответ истинность утверждения не(X или Y) = не X и не Y:   {res}");
+res = Method(true, false);
+Console.WriteLine($"Ответ истинность утверждения не(X или Y) = не X и не Y:   {res}");
+res = Method(false, true);
+Console.WriteLine($"Ответ истинность утверждения не(X или Y) = не X и не Y:   {res}");
+res = Method(false, false);
+Console.WriteLine($"Ответ истинность утверждения не(X или Y) = не X и не Y:   {res}");

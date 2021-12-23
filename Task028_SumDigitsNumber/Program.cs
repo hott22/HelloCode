@@ -14,4 +14,3 @@ while (number != 0)
 
 Console.Write("Сумму цифр в числе: ");
 Console.WriteLine(sum);
-
