@@ -19,7 +19,7 @@ void FillArray(int[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            matr[i, j] = new Random().Next(1, 10);
+            matr[i, j] = new Random().Next(1, 6);
         }
     }
 }
@@ -28,25 +28,28 @@ int[,] matrix = new int[3, 4];
 
 Console.Write("Введи число: ");
 int find = Convert.ToInt32(Console.ReadLine());
-int pos = -1;
-int Pos(int[,] matr, int find)
+bool check = true;
+void Pos(int[,] matr, int find)
 {
-    
+
     for (int i = 0; i < matr.GetLength(0); i++)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            if (matr[i,j] == find) 
+            if (matr[i, j] == find)
             {
-                int pos =  ;
-                break;
+                check = false;
+                Console.WriteLine($"{i} {j}");
+                
             }
 
         }
-    
-
+       
     }
-    return pos;
+     if (check)
+        {
+            Console.WriteLine("Элемента нет");
+        }
 }
 
 FillArray(matrix);
